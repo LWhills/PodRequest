@@ -16,6 +16,7 @@
 * > * {
   margin-top: 1.5em;
 }
+
 /* Style */
 body {
   font-family: "Chivo", sans-serif;
@@ -59,6 +60,7 @@ h1,
   justify-content: center;
   align-items: center;
 }
+
 .logo-container {
   margin-bottom: 2em;
 }
@@ -88,9 +90,7 @@ h1,
   width: auto;
   color: var(--greywhite_color);
 }
-.google-logo {
-  height: 11px;
-}
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -102,8 +102,12 @@ h1,
   border-radius: 25px;
   border: none;
 }
+.input-btn:hover {
+  background-color: #b3ffe2;
+}
 .input-email {
   background-color: var(--grey_color);
+  color: var(--white_color);
 }
 .input-email::placeholder {
   color: var(--white_color);
@@ -118,3 +122,95 @@ h1,
   display: none;
 }
 /*  */
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 3.5rem;
+  }
+  body {
+    background-image: url(/assets/tablet/image-host.jpg);
+    background-blend-mode: initial;
+    background-size: auto 69%;
+    background-position: top right;
+  }
+  .main-content {
+    background-color: var(--dark_color);
+    padding: 4em 2em 1em 0;
+    max-width: none;
+    position: relative;
+    top: 50px;
+  }
+  .main-body {
+    margin-left: 0;
+    max-width: 400px;
+  }
+  .container {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .soft-logo-container {
+    order: 1;
+    justify-content: flex-start;
+    height: 30px;
+    align-items: center;
+  }
+  .soft-logo {
+    margin-right: 2em;
+  }
+  .img-random {
+    display: initial;
+    position: absolute;
+    bottom: 0;
+  }
+  .input-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 63%;
+    margin-bottom: 2em;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  .input-email {
+    padding: 1.2em 2em;
+  }
+  .input-btn {
+    position: absolute;
+    right: 3px;
+    width: 150px;
+  }
+  .google-logo {
+    height: 18px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .container {
+    padding-left: 3em;
+    padding-top: 3em;
+  }
+  h1 {
+    font-size: 3.25rem;
+    max-width: 700px;
+  }
+  .main-body {
+    font-size: 1.125rem;
+    max-width: 450px;
+  }
+  body {
+    background-image: url(/assets/desktop/image-host.jpg);
+    background-position: top 165px right;
+  }
+  .img-random {
+    right: 0;
+    bottom: 100px;
+  }
+  .main-content {
+    padding: 6em 0em 9em 2em;
+    position: relative;
+    top: 110px;
+  }
+  .soft-logo-container {
+    height: 30px;
+  }
+}
