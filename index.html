@@ -22,7 +22,6 @@
       <div class="logo-container">
         <img src="/assets/desktop/logo.svg" alt="" class="main-logo" />
       </div>
-
       <main class="main-content">
         <h1>
           <span class="green-title">Publish your podcasts </span>everywhere.
@@ -34,14 +33,21 @@
             Casts and more!
           </div>
         </div>
-        <form class="input-container">
+        <form class="input-container" action="#">
           <input
             class="btn input-email"
-            type="email"
-            required
+            type="text"
             placeholder="Email adress"
+            valid
+            onkeyup="fillup()"
           />
-          <input class="btn input-btn" type="submit" value="Request Access" />
+          <input
+            class="btn input-btn"
+            type="submit"
+            value="Request Access"
+            onclick="valid()"
+          />
+          <p class="text-confirmation"></p>
         </form>
         <div class="soft-logo-container">
           <img src="/assets/desktop/spotify.svg" alt="" class="soft-logo" />
@@ -66,5 +72,6 @@
         <img src="/assets/desktop/bg-pattern-dots.svg" alt="" />
       </div>
     </div>
+    <script src="/App.js"></script>
   </body>
 </html>

@@ -165,18 +165,24 @@ h1,
   }
   .input-container {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     width: 63%;
     margin-bottom: 2em;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 3em;
+    text-align: left;
+  }
+  .text-confirmation {
+    margin-left: 2em;
+    margin-top: 0.8em;
   }
   .input-email {
     padding: 1.2em 2em;
   }
   .input-btn {
     position: absolute;
+    top: 2px;
     right: 3px;
     width: 150px;
   }
