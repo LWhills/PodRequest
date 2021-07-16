@@ -131,15 +131,15 @@ h1,
   body {
     background-image: url(/assets/tablet/image-host.jpg);
     background-blend-mode: initial;
-    background-size: auto 69%;
+    background-size: auto auto;
     background-position: top right;
   }
   .main-content {
     background-color: var(--dark_color);
-    padding: 4em 2em 1em 0;
+    padding: 6em 3em 2em 0;
     max-width: none;
     position: relative;
-    top: 50px;
+    top: 70px;
   }
   .main-body {
     margin-left: 0;
@@ -160,8 +160,8 @@ h1,
   }
   .img-random {
     display: initial;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: -130px;
   }
   .input-container {
     position: relative;
@@ -208,13 +208,13 @@ h1,
     background-position: top 165px right;
   }
   .img-random {
+    position: absolute;
     right: 0;
     bottom: 100px;
   }
   .main-content {
-    padding: 6em 0em 9em 2em;
-    position: relative;
-    top: 110px;
+    /* padding: 6em 0em 9em 2em; */
+    /* position: relative; */
   }
   .soft-logo-container {
     height: 30px;
