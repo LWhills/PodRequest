@@ -161,6 +161,7 @@ h1,
   .img-random {
     display: initial;
     position: relative;
+    left: -50px;
     bottom: -130px;
   }
   .input-container {
@@ -205,12 +206,12 @@ h1,
   }
   body {
     background-image: url(/assets/desktop/image-host.jpg);
-    background-position: top 165px right;
+    background-position: top 14sle5px right;
   }
   .img-random {
-    position: absolute;
-    right: 0;
-    bottom: 100px;
+    position: fixed;
+    left: 83.5%;
+    bottom: 0;
   }
   .main-content {
     /* padding: 6em 0em 9em 2em; */
