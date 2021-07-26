@@ -148,7 +148,7 @@ form {
     /* padding-bottom: 3em; */
     padding-left: 2em;
     min-height: 0;
-    /* margin-bottom: 8.1em; */
+    margin-bottom: 8.1em;
   }
 
   /* Layout */
@@ -200,6 +200,7 @@ form {
   .img-point {
     display: flex;
     margin-left: 30px;
+    margin-top: auto;
   }
 }
 /*  */
