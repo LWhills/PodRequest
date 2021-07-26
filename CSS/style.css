@@ -162,6 +162,7 @@ form {
     right: 5px;
     padding: 1em 1.5em;
     top: 5px;
+    display: block;
   }
   .input-email {
     padding: 1.5em;
