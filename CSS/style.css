@@ -199,6 +199,13 @@ form {
   }
   .img-point {
     display: flex;
+    margin-left: 30px;
   }
 }
 /*  */
+@media only screen and (min-height: 1024px) {
+  .img-point {
+    position: absolute;
+    bottom: 0;
+  }
+}
