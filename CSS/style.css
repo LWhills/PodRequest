@@ -8,12 +8,15 @@
 .container * > * {
   margin-top: 1.2em;
 }
+
 /*  */
 /* Typography */
 body {
   font-family: "Chivo", sans-serif;
   min-height: 100vh;
   text-align: center;
+  -webkit-text-size-adjust: none;
+  font-size: 100%;
 }
 h1 {
   font-size: 1.625rem;
@@ -43,12 +46,13 @@ h1 {
 .input-email,
 .input-submit {
   border-radius: 50px;
-  padding: 1.2em 2em;
   border: none;
+  padding: 1.2rem 1.5rem;
 }
 .input-email::placeholder {
   background-color: #2c344b;
   opacity: 0.5;
+  padding-left: 1em;
 }
 .input-email {
   background-color: #2c344b;
@@ -115,7 +119,11 @@ form {
 }
 /*  */
 /* Media queries */
-@media only screen and (min-device-width: 700px) {
+
+@media only screen and (min-width: 700px) {
+  .container * > * {
+    margin-top: 0;
+  }
   /* Typography */
   body {
     background-color: #121725;
@@ -123,12 +131,13 @@ form {
   h1 {
     font-size: 3rem;
     line-height: 3.5rem;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.7em;
   }
   .card-body {
     font-size: 1.125rem;
     line-height: 1.75rem;
     max-width: 450px;
+    margin-bottom: 2.5em;
   }
   .container {
     background-size: contain;
@@ -142,9 +151,6 @@ form {
   }
 
   /* Layout */
-  .container * > * {
-    margin-top: 1.2em;
-  }
   .main-content {
     display: flex;
     flex-direction: column;
@@ -152,35 +158,35 @@ form {
     margin: 0;
     max-width: 650px;
   }
-  form {
-    position: relative;
-    width: 70%;
-    margin-bottom: 2em;
-  }
-  .input-submit {
-    position: absolute;
-    right: 5px;
-    padding: 1em 1.5em;
-    top: 5px;
-    display: block;
-  }
-  .input-email {
-    padding: 1.5em;
-  }
   .logo-container {
+    display: flex;
+    justify-content: flex-start;
     order: 1;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     left: 0;
   }
   .logo-container img {
     max-height: 29px;
+    margin-right: 2em;
   }
   .google-logo {
     height: 18px;
   }
+  form {
+    position: relative;
+    width: 66%;
+  }
+  .input-submit {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.3rem;
+    bottom: 0.3rem;
+    padding: 0.9rem 1.5rem;
+  }
+
   .logo {
     width: fit-content;
-    margin-bottom: 8.5em;
+    margin-bottom: 13.5em;
     margin-top: 0;
   }
   .color-overlay {
@@ -191,10 +197,12 @@ form {
     padding: 2em 0em 0em 0em;
   }
   .img-point {
+    clip: auto;
     display: initial;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 30px;
+    object-fit: contain;
   }
 }
 /*  */
