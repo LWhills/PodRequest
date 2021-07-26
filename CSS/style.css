@@ -56,6 +56,7 @@ h1 {
 .input-submit {
   background-color: #54e6af;
   font-weight: 600;
+  appearance: none;
 }
 /*  */
 /* Layout */
