@@ -8,7 +8,9 @@
 .container * > * {
   margin-top: 1.2em;
 }
-
+html {
+  height: 100vh;
+}
 /*  */
 /* Typography */
 body {
