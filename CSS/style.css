@@ -19,6 +19,7 @@ body {
   text-align: center;
   -webkit-text-size-adjust: none;
   font-size: 100%;
+  position: relative;
 }
 h1 {
   font-size: 1.625rem;
@@ -66,7 +67,9 @@ h1 {
 }
 /*  */
 /* Layout */
-
+.contain-master {
+  min-height: 100vh;
+}
 .container {
   background: url(/assets/mobile/image-host.jpg), #2c344b;
   min-height: inherit;
@@ -200,16 +203,60 @@ form {
     padding: 2em 0em 0em 0em;
   }
   .img-point {
-    display: flex;
-    margin-left: 30px;
-    margin-top: auto;
+    display: initial;
+    position: absolute;
+    bottom: -14.5rem;
+    left: 0;
   }
 }
 /*  */
-@media only screen and (min-height: 1024px) {
+@media only screen and (min-width: 700px) and (min-height: 1025px) {
+  .container {
+    position: static;
+  }
   .img-point {
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+}
+/*  */
+@media only screen and (min-width: 1300px) {
+  .container {
+    background-image: url(/assets/desktop/image-host.jpg);
+    background-position: top 8rem right;
+    background-size: auto;
+    padding-left: 10.5em;
+    padding-top: 6em;
+    max-width: 1440px;
+    position: relative;
+    width: 100%;
+  }
+  .img-point {
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    left: initial;
+  }
+  .logo {
+    margin-bottom: 10em;
+  }
+}
+/*  */
+
+@media only screen and (min-width: 1441px) {
+  .contain-master {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .body {
+    max-width: 1440px;
+  }
+  .container {
+    margin: 0;
+    margin-right: 0;
   }
 }
