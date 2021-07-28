@@ -10,10 +10,12 @@ let template = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@
   }
   else if (email == ""){
       text.innerHTML = "It's empty, fill up your E-mail adress please."
+      text.style.color ="red";
   }
   else{
       console.log("NotOk")
       text.innerHTML = "Oops! please check your E-mail"
+      text.style.color ="red";
   }
 }
   
