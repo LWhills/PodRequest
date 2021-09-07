@@ -1,4 +1,4 @@
-# 3-Column-Preview
+# Pod Request
 
 Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/pod-request-cxmNlZAUm)
 
