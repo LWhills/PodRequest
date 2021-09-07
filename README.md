@@ -1,4 +1,4 @@
-# Pod Request
+# Pod request
 
 Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/pod-request-cxmNlZAUm)
 
