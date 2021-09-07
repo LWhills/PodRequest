@@ -72,7 +72,7 @@ h1 {
   min-height: 100vh;
 }
 .container {
-  background: url(assets/mobile/image-host.jpg), #2c344b;
+  background: url(../assets/mobile/image-host.jpg), #2c344b;
   min-height: inherit;
   background-blend-mode: screen;
   background-size: cover;
@@ -231,7 +231,7 @@ form {
 /*  */
 @media only screen and (min-width: 1300px) {
   .container {
-    background-image: url(assets/desktop/image-host.jpg);
+    background-image: url(../assets/desktop/image-host.jpg);
     background-position: top 8rem right;
     background-size: auto;
     padding-left: 10.5em;
