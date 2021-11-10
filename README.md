@@ -11,6 +11,6 @@ Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/pod-
   
 ## Demo
 
-https://loganwillaumez.github.io/pod-request/
+https://loganwillaumez-frontendmentor.github.io/006-pod-request/
 
   
